@@ -1,0 +1,85 @@
+@import "./normalize.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+ body {
+    background-image: url(../img/yogdu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+} 
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+}
+
+.light__button {
+    background-color:#fff;
+    color:#000;
+    border:2px solid green;
+    width:50px;
+    height:30px;
+}
+.dark__button {
+    background-color:#000;
+    color:#fff;
+    border:2px solid green;
+    width:50px;
+    height:30px;
+}
+
+.transform {
+    border:20px solid red;
+    background-image: url(../img/237-536x354.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:600px;
+    height:400px;
+    display: flex;
+}
+
+.transfor1__item {
+    width:300px;
+    height:360px;
+    border:10px solid #000;
+    background-color:#fff;
+    opacity:0.9;
+    transform-origin: left center;
+    transition-duration:4s;
+    transition-property: transform;
+    transition-timing-function:ease-in-out;
+}
+
+.transfor2__item {
+    width:300px;
+    height:360px;
+    border:10px solid #000;
+    background-color:#fff;
+    opacity:0.9;
+    transition-duration:4s;
+    transition-property: transform;
+    transition-timing-function:ease-in-out;
+    transform-origin: right center;
+}
+
+
+
+.transform:hover>  .transfor1__item {
+    transform: perspective(2300px) rotateY(80deg);
+}
+
+.transform:hover>  .transfor2__item {
+    transform: perspective(2300px) rotateY(-80deg);
+}
+
