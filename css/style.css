@@ -58,7 +58,7 @@
     background-color:#fff;
     opacity:0.9;
     transform-origin: left center;
-    transition-duration:4s;
+    transition-duration:0.5s;
     transition-property: transform;
     transition-timing-function:ease-in-out;
 }
@@ -69,7 +69,7 @@
     border:10px solid #000;
     background-color:#fff;
     opacity:0.9;
-    transition-duration:4s;
+    transition-duration:0.5s;
     transition-property: transform;
     transition-timing-function:ease-in-out;
     transform-origin: right center;
